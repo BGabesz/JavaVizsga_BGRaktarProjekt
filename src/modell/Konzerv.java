@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modell;
 
-/**
- *
- * @author vizsgaszf
- */
-public class Konzerv {
-    
+import java.io.File;
+
+public class Konzerv extends Elelmiszer{
+    private String leiras;
+    private File recept;
+
+    public Konzerv(String nev, String gyarto) {
+        super(nev, gyarto);
+    }
+    public void receptMutat(){
+        if (recept.exists()){
+            System.out.println("Exists");
+        }else{
+            
+            System.out.println("Does not Exists");
+        }
+            
+    }
 }
